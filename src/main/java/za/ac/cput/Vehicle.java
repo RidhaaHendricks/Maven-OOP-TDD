@@ -11,6 +11,10 @@ public class Vehicle {
 
     }
 
+    public Vehicle(String carID) {
+        this.carID = carID;
+    }
+
     public Vehicle(String carID, String model, String make, double price) {
         this.carID = carID;
         this.model = model;

@@ -43,6 +43,14 @@ public class Bus extends Vehicle {
         return totalTick;
     }
 
+    public double CalcMonthlyPrice(){
+        double total = 0.0;
+
+        total = CalcTotalTicketPrice() * getNoStandingPass();
+
+        return total;
+    }
+
     @Override
     public String toString() {
         return "Bus{" +
@@ -52,7 +60,9 @@ public class Bus extends Vehicle {
                 ", Price = " + getPrice() + '\'' +
                 ", Number of Standing Pass='" + noStandingPass + '\'' +
                 ", Ticket Price = " + ticketPrice + '\'' +
-                ", Total Passengers = " + totalPassengers +
+                ", Total Passengers = " + totalPassengers + '\'' +
+                ", Total Ticket Price = " + CalcTotalTicketPrice() + '\'' +
+                ", Total Monthly Ticket = " + CalcMonthlyPrice() +
                 '}';
     }
 }

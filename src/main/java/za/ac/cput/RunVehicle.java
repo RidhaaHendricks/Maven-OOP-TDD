@@ -24,6 +24,10 @@ public class RunVehicle {
             cr.setMake(sc.next());
             System.out.println("Car Price: 20000");
             cr.setPrice(20000.00);
+            System.out.println("Enter of People Travelling: ");
+            cr.setNoOfLiftPeople(sc.nextInt());
+            System.out.println("Enter Lift Price Per Week: ");
+            cr.setLiftPrice(sc.nextInt());
             System.out.println(cr.toString());
         } else if(opt == 2){
             System.out.println("Enter Bus ID: ");
@@ -36,6 +40,8 @@ public class RunVehicle {
             bs.setNoStandingPass(sc.nextInt());
             System.out.println("Bus Price: 120000");
             bs.setPrice(120000.00);
+            System.out.println("Enter Total Number of Passengers: ");
+            bs.setTotalPassengers(sc.nextInt());
             System.out.println(bs.toString());
         }
 

@@ -44,8 +44,8 @@ public class Car extends Vehicle {
                 ", Model =' " + getModel() + '\'' +
                 ", Make =' " + getMake() + '\'' +
                 ", Price = " + getPrice() + '\'' +
-                ", Number of Lift People = " + noOfLiftPeople + '\'' +
-                ", Lift Price = " + liftPrice +
+                ", Number of Lift People = " + getNoOfLiftPeople() + '\'' +
+                ", Lift Price = " + getLiftPrice() +
                 ", Total = " + CalcMonthlyPrice() +
                 '}';
     }
